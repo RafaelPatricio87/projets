@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2362CC;
+  width: 1400px;;
+  margin: 100px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 100px 60px;
+  gap: 60px;
+}
+.campoAnota{
+  display: flex;
+  gap: 60px;
+
+}
+.campoAnota {
+  width: 100%;
+}
+.campoAnota input{
+  width: 80%;
+  height: 150px;
+  border-radius: 12px;
+  border: 1px solid #2362CC;
+  font-size: 4rem;
+  padding-left: 15px;
+}
+button{
+  width: 20%;
+  height: 150px;
+  background-color: #2362CC ;
+  color: white;
+  font-size: 3rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.tarefas{
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  gap: 40px;
+}
+.tarefa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #C5E1E5;
+  padding: 30px 30px;
+  border-radius: 12px;
+  border: solid 1px rgba(0, 0, 0, 0.562);
+}
+.tarefa p {
+  font-size: 4rem;
+  font-weight: 600;
+}
+button{
+  background-color: #1E1BA3;
+
+}
+.img{
+  font-size: 5rem;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.tarefas{
+  /* display: none; */
+}
