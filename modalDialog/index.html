@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    dialog::backdrop{
+      background-color: rgb(0 0 0 / .3);
+    }
+    dialog{
+      border: none;
+      border-radius:  .5rem;
+      box-shadow: 0 0 1rem rgb(0 0 0 /.3);
+      width: 80%;
+    }
+  </style>
+  <title>modal/dialog</title>
+</head>
+<body>
+  <button>Abrir Modal</button>
+  <dialog>
+    <h2>Title</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Qui deserunt amet, esse voluptate, obcaecati neque tempore dignissimos culpa animi ea accusantium, suscipit quas harum impedit quis doloribus dolorum porro laborum!
+      </p>
+      <button id="fechar">Ok</button>
+  </dialog>
+     <script>
+       const abrir = document.querySelector('button')
+       const modal = document.querySelector('dialog')
+       const fechar = document.querySelector('#fechar')
+
+       abrir.onclick = function(){
+        //  modal.show()
+         modal.showModal()
+       }
+       fechar.onclick = function() {
+        modal.close()
+       }
+     </script>
+     <!-- feito por mayk brito -->
+</body>
+</html>
