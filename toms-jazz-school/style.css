@@ -68,6 +68,7 @@ header img {
 header nav {
   display: grid;
   grid-template-columns: 1fr 1fr ;
+  margin: 1rem auto;
 }
 nav a {
   color: var(--color-black);
@@ -174,6 +175,63 @@ footer nav a {
   width: 100%;
 }
 
-/* https://www.youtube.com/watch?v=b9Vw_LUyYmc */
+/* responsividade  */
 
-/* parou em 14:48 minutos */
+@media(min-width: 40rem){
+  header nav {
+    display: block;
+    text-align: center;
+  }
+  .cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card:nth-child(2n){
+     margin-top: 1rem;
+  }
+}
+@media(min-width: 48rem){
+  header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header img,
+  header nav,
+  header .button{
+    margin: 0;
+  }
+}
+@media(min-width: 72rem){
+  h1,h2{
+    font-size: 4rem;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 72rem;
+  }
+  .container.row-reverse{
+    flex-direction: row-reverse;
+  }
+  .about-column{
+    flex: 2;
+  }
+  .about-column p {
+    font-size: 1.25rem;
+    max-width: 16rem;
+  }
+  footer nav {
+    flex: 1;
+  }
+  .newsletter-form {
+    flex: 3;
+  }
+}
+@media(min-width: 90rem){
+  .container{
+    max-width: 80rem;
+  }
+}
