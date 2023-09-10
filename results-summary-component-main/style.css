@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@700&family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&display=swap');
+/* font-family: 'Hanken Grotesk', sans-serif; */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 64%;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+body{
+  max-width: 375px;
+  margin: 0 auto;
+  
+}
+header{
+  background: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%)) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 2rem 2rem;
+}
+header h1 {
+  color: #ffffff88;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+.circulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(78, 33, 202, 0.466);
+  color: #fff;
+  font-weight: 800;
+  font-size: 4rem;
+  padding: 2rem 3rem;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+.circulo span {
+  font-size: 1.2rem ;
+  color: #ffffff60;
+}
+.great{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+}
+.great h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+.great p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #ffffff96;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
